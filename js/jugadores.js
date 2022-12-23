@@ -18,7 +18,7 @@ window.addEventListener("load",()=>{
         console.log("mostrar mapa")
     }else{
         
-        window.location.href="../view/index.html"
+        window.location.href="../index.html"
     }
 
 const main_de_jugadores=document.querySelector('[name=main_de_jugadores]')
