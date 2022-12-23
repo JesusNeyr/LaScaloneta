@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>mapa</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="contenedor_de_navegacion">
+             <h1>La Scaloneta</h1>
+             <ul class="mobile desktop">
+                 <!-- <li><a href="/view/home.html">Home</a></li> -->
+                 <li name="login_li"><a href="/view/login.html" >Home</a></li>
+             </ul>
+             <div class="burger" id="burger">
+                 <img src="../public/img/burguer.png" alt="menu_burquer" srcset="">
+             </div>
+             
+         </nav>
+     </header>
+     <main class="main_de_map">
+         <section>
+            <select  class="select_jugadores" name="select_jugadores" id="select_jugadores">
+                
+            </select>
+            <article>
+                <div id="map">
+                </div>
+            </article>         
+        </section>
+     </main>
+     
+     
+</body>
+</html>
+<script src="../js/eventos_mapa.js"></script>
+<script src="../js/eventos_nav.js"></script>

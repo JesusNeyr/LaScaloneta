@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>loggin</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="contenedor_de_navegacion">
+             <h1>La Scaloneta</h1>
+             <ul class="mobile desktop">
+                 <li><a href="/view/login.html">Home</a></li>
+             </ul>
+             <div class="burger" id="burger">
+                 <img src="../public/img/burguer.png" alt="menu_burquer" srcset="">
+             </div>
+         </nav>
+     </header>
+     <main>
+        <section class="contenedor_form">
+            <form id="form-login" name="form" class="form_general hidden">
+                <fieldset>
+                    <input type="email" name="email" placeholder="Ingrese email">
+                    <span></span>
+                    <input type="password" name="pass_user" id="pass_user" placeholder="*******">
+                    <span></span>
+                    <input type="submit" value="Iniciar" name="iniciar">
+                    <span></span>
+                </fieldset>
+                <div>
+                    <a href="/view/register.html">Registrarse</a>
+                    
+                    <a href="/view/olvide_contrasenia.html">olvide contraseña</a>
+                </div>
+
+            </form>
+        </section>
+     </main>
+</body>
+</html>
+<script src="../js/eventos_nav.js"></script>
+<script src="../js/validar_forms.js"></script>
+<script src="../js/eventos_login.js"></script>

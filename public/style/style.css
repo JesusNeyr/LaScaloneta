@@ -1,0 +1,259 @@
+html {
+    background: url('https://wallpaperbat.com/img/265638-argentina-national-football-team-hd-wallpaper-background-image.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    --bs-body-bg:transparent;
+}
+.hidden{
+    display: none;
+}
+
+body{
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+}
+.contenedor_de_navegacion{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 6px;
+    background-color: black;
+    height: 62px;
+    z-index: 10000;
+}
+.contenedor_de_navegacion>h1{
+    min-width: 30%;
+}
+.mobile{
+    display: none;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 50%;
+    width: 100vw;
+    position: absolute;
+    margin-top: 60em;
+    height: 100vh;
+    padding: 50% 4%;
+}
+.contenedor_de_navegacion>ul>li{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    background-color: black;
+    border-radius: 57px;
+    margin-bottom: 4%;
+    margin-right: 6px;
+    
+}
+.contenedor_de_navegacion>ul>li>a{
+    text-decoration: none;
+    padding: 8px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-radius: 15px;
+}
+.contenedor_de_navegacion>ul>li>a:hover{
+    background-color: rgba(146, 146, 146, 0.67);
+    transition: all 0.5s;
+}
+.burger{
+    width: 20%;
+    padding: 8px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.burger:hover{
+    cursor: pointer;
+    transition: all 0.5s;
+    background-color:rgba(146, 146, 146, 0.67);
+
+}
+.burger>img{
+    width: 50%;
+}
+main{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+/* mensdaje de erro en form */
+.invalido{
+    border: 1px solid;
+    box-shadow: 2px 0px 10px;
+}
+.error{
+    display: block;
+    color: red;
+}
+/* fin del msj de error */
+/* estilos al form */
+.contenedor_form{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+    min-width:400px ;
+}
+
+/* estilando el formularios */
+.form_general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    min-width: 300px;
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(51, 110, 161, 0.5);
+}
+.form_general>fieldset{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+.form_general>fieldset, .form_general>fieldset>input{
+    border: 0;
+    outline: none;
+    margin-bottom: 20px;
+}
+.form_general>fieldset>input{
+    padding: 5px 10px;
+    border: 1px solid;
+    box-shadow: 2px 0px 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1em;
+  
+}
+.form_general>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.form_general>div>a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 0;
+}
+.form_general>div>a:hover{
+    background-color: rgb(80, 79, 79);
+    color: #fff;
+    transition: all 0.5s;
+}
+
+/* fin de estilos form de login*/
+/* map */
+.section_jugadores{
+    margin-top: 10em;
+}
+.select_jugadores{
+    padding: 5px;
+    position: absolute;
+    top: 17em;
+    z-index: 1000;
+}
+.main_de_map{
+    padding: 20px;
+    margin: 16em auto;
+    height: auto;
+    width: 90vw;
+}
+.main_de_map section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#map { 
+    height: 60vh;
+    width: 80vw;
+    margin: 1em auto;
+    border-radius: 10px;
+}
+.contenedor_de_jugador{
+    position: relative;
+    z-index: -1;
+}
+.contenedor_de_jugador h1{
+    margin-top: 640em;
+}
+/* --------- */
+.contenedor_de_jugador h1{
+    color: #fff;
+}
+.contenedor_de_jugador h1 span{
+    color: #119DD8;
+}
+
+
+@media (min-width: 500px), handheld and (orientation: landscape) { 
+    .desktop{
+        display: flex; 
+        align-items: center;
+        justify-content: space-evenly;
+        width: 14%;
+        margin-top: 20px;
+        border-right: 1px solid gray;
+        padding: 4px;
+    }
+    .burger{
+        display: none;
+    }
+    .contenedor_form{
+        width:50vw;
+    }
+    .contenedor_form>form{
+        width: 30vw;
+        padding: 20px;
+    }
+    .contenedor_de_jugador h1{
+        margin-top: 170em;
+    }
+}
