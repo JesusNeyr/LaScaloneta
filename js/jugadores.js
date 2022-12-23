@@ -32,7 +32,7 @@ fetch("https://639a535a3a5fbccb5264b073.mockapi.io/jugadores")
             <div class="card">
                 <div class="img-wrapper">
                     <img src="https://julioavantt.github.io/guayerd-project-images/img/${jugador.dorsal}.jpg" class="card-img-top" alt="${jugador.name}">
-                    <span>${jugador.dorsal}</span>
+                    <span class="dorsal">${jugador.dorsal}</span>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">${jugador.name}</h5>
