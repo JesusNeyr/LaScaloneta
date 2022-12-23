@@ -49,7 +49,7 @@ if (mostrar) {
     ul.appendChild(li_de_jugadores)
 
     a.addEventListener("click",()=>{
-        a.setAttribute("href","/view/login.html")
+        a.setAttribute("href","/view/index.html")
         localStorage.removeItem(clave)
     })
     a_de_map.addEventListener("click",()=>{

@@ -17,7 +17,7 @@ window.addEventListener("load",()=>{
         console.log("mostrar mapa")
     }else{
         
-        window.location.href="../view/login.html"
+        window.location.href="../view/index.html"
     }
    
 // ------------------------------

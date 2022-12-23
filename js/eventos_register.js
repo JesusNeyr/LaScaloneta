@@ -71,7 +71,7 @@ form.addEventListener("submit",(element)=>{
         let valor=pass_user.value
         if (key && valor) {
             localStorage.setItem(key,valor)
-            window.location.href="../view/login.html"
+            window.location.href="../view/index.html"
             alert("Registrado")
         }
         
