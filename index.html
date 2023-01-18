@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>loggin</title>
 </head>
-<body>
+<body id="login">
     <header class="header">
         <nav class="contenedor_de_navegacion">
              <h1>La Scaloneta</h1>
@@ -23,11 +23,19 @@
          </nav>
      </header>
      <main>
+        <section class="logoCopa">
+            <div>
+                <img src="./public/img/logoCopa.jpg" alt="logo de la copa">
+            </div>
+        </section>
         <section class="contenedor_form">
+            <h1 class="titulo_form_login">Inicio de Sesión</h1>
             <form id="form-login" name="form" class="form_general hidden">
                 <fieldset>
-                    <input type="email" name="email" placeholder="Ingrese email">
+                    <label for="email">Email *</label>
+                    <input type="email" name="email">
                     <span></span>
+                    <label for="pass_user">Password *</label>
                     <input type="password" name="pass_user" id="pass_user" placeholder="*******">
                     <span></span>
                     <input type="submit" value="Iniciar" name="iniciar">
@@ -35,13 +43,16 @@
                 </fieldset>
                 <div>
                     <a href="/view/register.html">Registrarse</a>
-                    
-                    <a href="/view/olvide_contrasenia.html">olvide contraseña</a>
                 </div>
 
             </form>
         </section>
      </main>
+     <footer>
+        <div class="logo_footer">
+            <img src="/public/img/logoGuayerd.svg" alt="">
+        </div>
+     </footer>
 </body>
 </html>
 <script src="../js/eventos_nav.js"></script>
