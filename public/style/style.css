@@ -1,11 +1,3 @@
-/* html { */
-
-    /* background: url('../img/bgMessi.png') no-repeat center center fixed; */
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
-/* } */
 *{
     margin: 0;
     padding: 0;
@@ -13,17 +5,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-body{
-    /* es modo desktop--bs-body-bg:transparent; */
-    height: 100vh
-}
-.hidden{
-    display: none;
-}
-
-body{
-    height: 100vh;
-}
 nav{
     box-shadow: 2px 0px 10px #000000;
 }
@@ -36,93 +17,24 @@ nav{
     border: 0px;
     color: #fff;
 }
+
+
 nav>div>.enlace_index{
     color: #119DD8;
 }
-.header{
-    display: none;
-    /* width: 100%;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    color: #fff; */
-}
-.contenedor_de_navegacion{
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3px 6px;
-    background-color: black;
-    height: 62px;
-    z-index: 10000;
-}
-.contenedor_de_navegacion>h1{
-    min-width: 30%;
-}
-.mobile{
-    display: none;
-}
-/* .show{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 50%;
-    width: 100vw;
-    position: absolute;
-    margin-top: 60em;
-    height: 100vh;
-    padding: 50% 4%;
-} */
-.contenedor_de_navegacion>ul>li{
-    list-style: none;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid gray;
-    background-color: black;
-    border-radius: 57px;
-    margin-bottom: 4%;
-    margin-right: 6px;
+#login main{
     
-}
-.contenedor_de_navegacion>ul>li>a{
-    text-decoration: none;
-    padding: 8px 0;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    border-radius: 15px;
-}
-.contenedor_de_navegacion>ul>li>a:hover{
-    background-color: rgba(146, 146, 146, 0.67);
-    transition: all 0.5s;
-}
-.burger{
-    width: 20%;
-    padding: 8px;
-    height: 100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    border-radius: 5px;
-}
-.burger:hover{
-    cursor: pointer;
-    transition: all 0.5s;
-    background-color:rgba(146, 146, 146, 0.67);
+    align-items: center;
 
-}
-.burger>img{
-    width: 50%;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 25px;
     height: 95%;
 }
 .logoCopa{
@@ -130,17 +42,10 @@ main{
     height: 238px;
     width: 199px;
     border-radius: 0px;
-
 }
-/* main{
-    margin-top: 10em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-} */
+
 /* mensdaje de erro en form */
+
 .invalido{
     border: 1px solid;
     box-shadow: 2px 0px 10px;
@@ -156,12 +61,6 @@ main{
 .contenedor_form{
     width: 250px;
     height: 248px;
-
-    /* display: flex;
-    justify-content: center;
-    width: 90%;
-    min-width:370px ;
-    border: 1px solid black; */
 }
 
 /* estilando el formularios */
@@ -170,9 +69,6 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* background-color: rgba(240, 248, 255, 0.5);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(51, 110, 161, 0.5); */
 }
 .titulo_form_login{
     font-family: 'Raleway';
@@ -184,9 +80,7 @@ main{
     margin-bottom: 20px;
 }
 .form_general>fieldset>label{
-
     width: 67px;
-    
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 500;
@@ -208,7 +102,6 @@ main{
 .form_general>fieldset>input{
     padding: 5px 10px;
     border: 1px solid;
-    box-shadow: 2px 0px 10px;
     margin: 10px 0;
     border-radius: 5px;
     font-size: 1em;
@@ -250,12 +143,7 @@ main{
     top: 4em;
     z-index: 1000;
 }
-/* .main_de_map{
-    padding: 20px;
-    margin: auto;
-    height: auto;
-    width: 90vw;
-} */
+
 .main_de_map section{
     display: flex;
     flex-direction: column;
@@ -263,22 +151,39 @@ main{
 }
 #map { 
     height: 90vh;
-    width: 100vw;
-    margin: 1em auto;
-    border-radius: 10px;
+    width: 99vw;
+    margin: -4em auto;
 }
 .contenedor_de_jugador{
    
     position: relative;
     z-index: -1;
 }
+.contenedor_de_jugador h1 span{
+    color:#119DD8
+}
 
 /* --------- */
-.contenedor_de_jugador h1{
-    color: #fff;
+
+.card-info{
+    position: absolute;
+    height: 195px;
+    background-color: #F5F5F5;
+    bottom: -31px;
 }
-.contenedor_de_jugador h1 span{
-    color: #119DD8;
+.card-jugadores div{
+    width: 350px;
+    margin: 10px auto;
+    font-size: 13px;
+}
+.card-jugadores div div img{
+    width: 348px;
+    height: 361px;
+    position: relative;
+    top: -10px;
+}
+.card-info p{
+   margin-bottom: 4px;
 }
 .dorsal{
     margin: 12px;
@@ -293,32 +198,68 @@ main{
     border-radius: 4px;
     box-shadow: 4px 2px 1px black;
 }
-
-.logo_footer{
+.boton-enviar{
+    background: #374785;
+    color: #ffff;;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+}
+/* .logo_footer{
     position: absolute;
     left: 34.36%;
     right: 36.91%;
-    /* top: 93.6%; */
+    /* top: 93.6%; 
     bottom: 1%;
-}
-@media (min-width: 500px), handheld and (orientation: landscape) { 
-    .desktop{
-        display: flex; 
-        align-items: center;
-        justify-content: flex-end;
-        width: 50%;
-        margin-top: 20px;
-        border-right: 1px solid gray;
-        padding: 4px;
-    }
-    .burger{
+} */
+
+@media (min-width: 450px), handheld and (orientation: landscape) { 
+    .logoCopa{
         display: none;
     }
-    /* .contenedor_form{
-        width:50vw;
+    footer{
+        background: #ffffff;
+        border-radius: 0px 0px 0px var(--br);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+    #login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: url('../img/bgMessi.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    /* main{
+        height: auto;
     } */
-    /* .contenedor_form>form{
-        width: 30vw;
-        padding: 20px;
-    } */
+    
+    .contenedor_form{
+        width: 364px;
+        height: 300px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(51, 110, 161, 0.5);
+        padding: 30px;
+    }
+    .li-map{
+        margin-left: 5em;
+    }
+    .boton-cerrar-sesion{
+        width: 10%;
+        max-width: 121px;
+        min-width: 121px;
+    }
 }

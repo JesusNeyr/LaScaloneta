@@ -1,26 +1,4 @@
 window.addEventListener("load",()=>{
-
-    mostrar=true
-    clave=''
-    Object.entries(localStorage).forEach(([key, valor]) => {
-       
-        if (key=="login" && valor=="true") {
-            
-            mostrar=true
-            clave=key
-        }else{
-            mostrar=false
-        }
-    });             
-    if (mostrar) {
-
-        console.log("mostrar mapa")
-    }else{
-        
-        window.location.href="../index.html"
-    }
-   
-// ------------------------------
     const objetoMapa = [
     {
     jugador: "Qatar 2022",
